@@ -11,6 +11,5 @@ template:
           tags: {}
           template:
             templateRef: Stage
-            versionLabel: v1
   identifier: Pipeline
   versionLabel: v2
