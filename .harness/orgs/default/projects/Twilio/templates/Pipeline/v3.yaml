@@ -1,0 +1,15 @@
+template:
+  name: Pipeline
+  type: Pipeline
+  projectIdentifier: Twilio
+  orgIdentifier: default
+  spec:
+    stages:
+      - stage:
+          name: Custom
+          identifier: Custom
+          tags: {}
+          template:
+            templateRef: Stage
+  identifier: Pipeline
+  versionLabel: v3
