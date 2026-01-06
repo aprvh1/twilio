@@ -1,0 +1,30 @@
+template:
+  name: Stage
+  type: Stage
+  projectIdentifier: Twilio
+  orgIdentifier: default
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: Debug
+              identifier: Debug
+              spec:
+                shell: Bash
+                executionTarget: {}
+                source:
+                  type: Inline
+                  spec:
+                    script: |-
+                      echo 10000
+                      echo v2
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
+    delegateSelectors:
+      - hsf-delegate
+  identifier: Stage
+  versionLabel: v2
