@@ -18,7 +18,7 @@ template:
                 source:
                   type: Inline
                   spec:
-                    script: echo 1000
+                    script: echo 10000
                 environmentVariables: []
                 outputVariables: []
               timeout: 10m
