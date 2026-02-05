@@ -1,0 +1,6 @@
+cluster:
+  name: "local-demo"
+  env: "dev"
+  region: "localhost"
+  # This tells Argo to deploy to the same cluster it is installed on
+  server: "https://kubernetes.default.svc"
