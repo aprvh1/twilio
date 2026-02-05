@@ -1,0 +1,29 @@
+# Bitnami NGINX specific values
+replicaCount: 2
+
+image:
+  registry: docker.io
+  repository: bitnami/nginx
+  tag: 1.25.3-debian-11-r0
+
+service:
+  type: ClusterIP
+  ports:
+    http: 80
+
+# Custom labels to prove the ApplicationSet is working
+commonLabels:
+  managed-by: harness-appset
+  environment: dev
+  demo-mode: "true"
+
+# Example of overriding the default NGINX welcome page
+html:
+  enabled: true
+  content: |
+    <html>
+      <body>
+        <h1>Harness + OCI Demo</h1>
+        <p>This was deployed using an OCI Helm Chart and Git-based values!</p>
+      </body>
+    </html>
