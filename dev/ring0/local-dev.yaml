@@ -4,3 +4,4 @@ cluster:
   region: "localhost"
   # This tells Argo to deploy to the same cluster it is installed on
   server: "https://kubernetes.default.svc"
+  targetRevision: "15.1.0"
