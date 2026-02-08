@@ -1,6 +1,6 @@
 cluster:
   name: "local-demo"
   server: "https://kubernetes.default.svc"
-  targetRev: "15.1.0"
+  targetRev: "18.1.1"
   env: "dev"
   region: "localhost"
