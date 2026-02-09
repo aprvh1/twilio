@@ -5,8 +5,8 @@ commonLabels:
 image:
   registry: "docker.io"
   tag: "stable-alpine3.23-perl"
-  repository: "bitnami/nginx"
-replicaCount: 2
+  repository: "nginx"
+replicaCount: 1
 service:
   type: "ClusterIP"
   ports:
