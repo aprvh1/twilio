@@ -11,7 +11,5 @@ service:
     http: 80
 containerSecurityContext:
   readOnlyRootFilesystem: false
-html:
-  enabled: true
-  content: "<html>\n  <body>\n    <h1>Harness + OCI Demo</h1>\n    <p>This was deployed\
-    \ using an OCI Helm Chart and Git-based values!</p>\n  </body>\n</html>\n"
+  runAsUser: 1001
+  runAsGroup: 1001
