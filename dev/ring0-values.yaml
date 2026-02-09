@@ -1,6 +1,4 @@
 commonLabels:
-  environment: "dev"
-  managed-by: "harness-appset"
   demo-mode: "true"
 image:
   registry: "docker.io"
