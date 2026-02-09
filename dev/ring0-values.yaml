@@ -9,10 +9,6 @@ service:
   type: "ClusterIP"
   ports:
     http: 80
-# Inside dev/ring0/values.yaml
-containerSecurityContext:
-  readOnlyRootFilesystem: false # NGINX needs to write to /tmp
-
 nginx:
   # This overwrites the default nginx.conf with non-root friendly paths
   customConfig: |
