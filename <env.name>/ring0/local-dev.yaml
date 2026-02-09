@@ -1,1 +1,3 @@
+cluster:
+  targetRev: "18.2.1"
 cluster.targetRev: "18.2.2"
