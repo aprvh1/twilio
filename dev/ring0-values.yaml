@@ -9,6 +9,8 @@ service:
   type: "ClusterIP"
   ports:
     http: 80
+containerSecurityContext:
+  readOnlyRootFilesystem: false
 html:
   enabled: true
   content: "<html>\n  <body>\n    <h1>Harness + OCI Demo</h1>\n    <p>This was deployed\
