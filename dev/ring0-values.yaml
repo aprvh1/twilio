@@ -2,8 +2,8 @@ commonLabels:
   demo-mode: "true"
 image:
   registry: "docker.io"
-  tag: "stable-alpine3.23-perl"
-  repository: "nginx"
+  tag: "latest"
+  repository: "bitnami/nginx"
 replicaCount: 1
 service:
   type: "ClusterIP"
